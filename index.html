@@ -8,8 +8,7 @@
 
   <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 
-      <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/style.css">
   
 </head>
 
@@ -20,19 +19,19 @@
     <div class="row">
       <h4>Account</h4>
       <div class="input-group">
-        <input type="text" placeholder="First Name" name="firstname"/>
+        <input type="text" placeholder="First Name" name="firstname" required/>
       </div>
       <div class="input-group">
-        <input type="text" placeholder="Middle Name" name="middlename"/>
+        <input type="text" placeholder="Middle Name" name="middlename" required/>
       </div>
       <div class="input-group">
-        <input type="text" placeholder="Last Name" name="lastname"/>
+        <input type="text" placeholder="Last Name" name="lastname" required/>
       </div>
       <div class="input-group">
-        <input type="email" placeholder="Email Address" name="email"/>
+        <input type="email" placeholder="Email Address" name="email" required/>
       </div>
       <div class="input-group">
-        <input type="text" placeholder="Phone" name="phone"/>
+        <input type="text" placeholder="Phone" name="phone" required/>
       </div>
     </div>
     <div class="row">
@@ -40,20 +39,20 @@
         <h4>Date of Birth</h4>
         <div class="input-group">
           <div class="col-third">
-            <input type="text" placeholder="DD" name="dd"/>
+            <input type="text" placeholder="DD" name="dd" required/>
           </div>
           <div class="col-third">
-            <input type="text" placeholder="MM" name="mm"/>
+            <input type="text" placeholder="MM" name="mm" required/>
           </div>
           <div class="col-third">
-            <input type="text" placeholder="YYYY" name="yyyy"/>
+            <input type="text" placeholder="YYYY" name="yyyy" required/>
           </div>
         </div>
       </div>
       <div class="col-half">
         <h4>Gender</h4>
         <div class="input-group">
-          <input type="radio" name="gender" value="male" id="gender-male"/>
+          <input type="radio" name="gender" value="male" id="gender-male" required/>
           <label for="gender-male">Male</label>
           <input type="radio" name="gender" value="female" id="gender-female"/>
           <label for="gender-female">Female</label>
@@ -63,7 +62,13 @@
     <div class="row">
         <h4>Education</h4>
         <div class="input-group">
-            <input type="text" placeholder="Courses / Certification"/>
+            <input type="text" placeholder="Courses / Certification" name="courses" required/>
+            <div class="col-half" style="margin-top: 10px;">
+                <input type="number" step="0.01" placeholder="SPI Sem 3" name="sem3" required/>
+            </div>
+            <div class="col-half" style="margin-top: 10px;">
+                <input type="number" step="0.01" placeholder="SPI Sem 4" name="sem4" required/>
+            </div>
         </div>
         <h4>Key Skills</h4>
         <div class="col-half skills">
@@ -74,8 +79,8 @@
                 <label for="verbal">Verbal English</label>
                 <input type="checkbox" id="written" name="written" value="Written English"/>
                 <label for="written">Written English</label>
-                <input type="checkbox" id="data-research" name="data-research" value="Data Research"/>
-                <label for="data-research">Data Research</label>
+                <input type="checkbox" id="data_research" name="data_research" value="Data Research"/>
+                <label for="data_research">Data Research</label>
                 <input type="checkbox" id="confidence" name="confidence" value="Confidence"/>
                 <label for="confidence">Confidence</label>
                 <input type="checkbox" id="teamwork" name="teamwork" value="Teamwork"/>
@@ -100,7 +105,7 @@
         </div>
         <h4>Do you want to pursue further studies?</h4>
         <div class="input-group">
-          <input type="radio" name="future-plan" value="yes" id="future-yes"/>
+          <input type="radio" name="future-plan" value="yes" id="future-yes" required/>
           <label for="future-yes">Yes</label>
           <input type="radio" name="future-plan" value="no" id="future-no"/>
           <label for="future-no">No</label>
@@ -109,7 +114,7 @@
     <div class="row">
       <h4>Terms and Conditions</h4>
       <div class="input-group">
-        <input type="checkbox" id="terms"/>
+        <input type="checkbox" id="terms" required/>
         <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
       </div>
     </div>
