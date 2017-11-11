@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 11, 2017 at 07:14 AM
+-- Generation Time: Nov 11, 2017 at 12:25 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.10
 
@@ -43,9 +43,9 @@ CREATE TABLE `student_info` (
   `keyskills` varchar(1000) DEFAULT NULL,
   `furtherstudy` varchar(5) NOT NULL,
   `city` varchar(20) NOT NULL,
-  `score` int(100) NOT NULL,
+  `score` int(100) NOT NULL DEFAULT '0',
   `user_id` varchar(100) NOT NULL,
-  `answer` varchar(100) NOT NULL
+  `answer` varchar(100) NOT NULL DEFAULT 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -53,7 +53,8 @@ CREATE TABLE `student_info` (
 --
 
 INSERT INTO `student_info` (`student_id`, `firstname`, `middlename`, `lastname`, `email`, `phone`, `dob`, `gender`, `courses`, `sem3`, `sem4`, `keyskills`, `furtherstudy`, `city`, `score`, `user_id`, `answer`) VALUES
-(5, 'Yash', 'Dipak', 'Pandit', 'yashpandit1995@gmail.com', '9737625463', '21/12/1995', 'male', 'fa', 6.6, 7.7, '', 'yes', 'porbandar', 0, '', '');
+(24, 'Yash', 'Dipak', 'Pandit', 'yashpandit1995@gmail.com', '9737625463', '21/12/1111', 'male', 'wern', 12, 12, 'Communication Skills,Leadership,', 'yes', 'porbandar', 5, 'GPP18YP9737625463', 'acdadccxxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
+(28, 'fa', 'fa', 'fa', 'fa@fa.com', '9999999999', '12/12/1111', 'male', 'ghvh', 1.11, 2.22, 'Communication Skills,Leadership,', 'yes', 'porbandar', 1, 'GPP18FF9999999999', 'abaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
 
 --
 -- Indexes for dumped tables
@@ -73,7 +74,7 @@ ALTER TABLE `student_info`
 -- AUTO_INCREMENT for table `student_info`
 --
 ALTER TABLE `student_info`
-  MODIFY `student_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `student_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
