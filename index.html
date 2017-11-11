@@ -31,7 +31,7 @@
         <input type="email" placeholder="Email Address" name="email" required/>
       </div>
       <div class="input-group">
-        <input type="text" placeholder="Phone" name="phone" id="number" required/>
+        <input type="text" placeholder="Phone" name="phone" id="number" maxlength="10"  required/>
       </div>
     </div>
     <div class="row">
@@ -39,13 +39,13 @@
         <h4>Date of Birth</h4>
         <div class="input-group">
           <div class="col-third">
-            <input type="text" placeholder="DD" name="dd" required/>
+            <input type="text" placeholder="DD" name="dd" maxlength="2" required/>
           </div>
           <div class="col-third">
-            <input type="text" placeholder="MM" name="mm" required/>
+            <input type="text" placeholder="MM" name="mm" maxlength="2" required/>
           </div>
           <div class="col-third">
-            <input type="text" placeholder="YYYY" name="yyyy" required/>
+            <input type="text" placeholder="YYYY" name="yyyy" maxlength="4" required/>
           </div>
         </div>
       </div>
@@ -64,10 +64,10 @@
         <div class="input-group">
             <input type="text" placeholder="Courses / Certification" name="courses" required/>
             <div class="col-half" style="margin-top: 10px;">
-                <input type="number" step="0.01" placeholder="SPI Sem 3" name="sem3" required/>
+                <input type="number" step="0.01" placeholder="SPI Sem 3" min="1" max="10" name="sem3" required/>
             </div>
             <div class="col-half" style="margin-top: 10px;">
-                <input type="number" step="0.01" placeholder="SPI Sem 4" name="sem4" required/>
+                <input type="number" step="0.01" placeholder="SPI Sem 4" min="1" max="10" name="sem4" required/>
             </div>
         </div>
         <h4>Key Skills</h4>
@@ -94,11 +94,11 @@
                 <input type="checkbox" id="problemsolving" name="problemsolving" value="Problem Solving"/>
                 <label for="problemsolving">Problem Solving</label>
                 <input type="checkbox" id="decision" name="decision" value="Desicion Making"/>
-                <label for="problemsolving">Desicion Making</label>
+                <label for="decision">Desicion Making</label>
                 <input type="checkbox" id="time" name="time" value="Time Management"/>
                 <label for="time">Time Management</label>
                 <input type="checkbox" id="responsibility" name="responsibility" value="Accepting Responsibilties"/>
-                <label for="responsibilty">Accepting Responsibilties</label>
+                <label for="responsibility">Accepting Responsibilties</label>
                 <input type="checkbox" id="project" name="project" value="Project Management"/>
                 <label for="project">Project Management</label>
             </div>
