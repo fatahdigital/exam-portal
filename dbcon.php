@@ -7,7 +7,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost'){
     }
 }
 else {
-    $conn = new mysqli("career.fatah.co", "root", "careerfatah", "fatahcareer");
+    $conn = new mysqli("localhost", "root", "careerfatah", "fatahcareer");
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
