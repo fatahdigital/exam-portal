@@ -3,20 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Fatah | Exam Portal</title>
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
   <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/qstyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
 </head>
 
 <body>
-  
+
+
 <div class="container">
     <div class="row">
         <div class="col-sm-4"></div>
@@ -24,20 +23,18 @@
             <img src="img/logo.jpg" class="fatah-logo"/>
         </div>
         <div class="col-sm-4"></div>
-    
+
     </div>
-    
+
     <form id="questions" method="post" action="submitquestions.php">
-            <br><div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-4">
+            <br><div class="row userid">
+                <div class="col-sm-8">
                     <div class="input-group">
                       <input type="text" class="form-control" placeholder="Your ID" name="studentid" required>
                     </div>
                     <br><h4>Questions</h4>
                 </div>
-                <div class="col-sm-6"></div>
-                
+
             </div>
             <br><div class="row">
                 <div class="col-sm-2"></div>
@@ -67,7 +64,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>3.  A dishonest shopkeeper professes to sell pulses at the cost price, but he uses a false weight of 950gm. for a kg. His gain is …%.</p>
-            
+
                 <input type="radio" name="3" value="a"> 4.7%<br>
                 <input type="radio" name="3" value="b"> 4.3%<br>
                 <input type="radio" name="3" value="c"> 3.9%<br>
@@ -79,7 +76,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>4.  A software engineer has the capability of thinking 100 lines of code in five minutes and can type 100 lines of code in 10 minutes. He takes a break for five minutes after every ten minutes. How many lines of codes will he complete typing after an hour?</p>
-            
+
                 <input type="radio" name="4" value="a"> 300<br>
                 <input type="radio" name="4" value="b"> 250<br>
                 <input type="radio" name="4" value="c"> 200<br>
@@ -91,7 +88,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>5.  A man was engaged on a job for 30 days on the condition that he would get a wage of Rs. 10 for the day he works, but he have to pay a fine of Rs. 2 for each day of his absence. If he gets Rs. 216 at the end, he was absent for work for ... days.</p>
-            
+
                 <input type="radio" name="5" value="a"> 3 days<br>
                 <input type="radio" name="5" value="b"> 4 days<br>
                 <input type="radio" name="5" value="c"> 8 days<br>
@@ -103,7 +100,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>6.  A contractor agreeing to finish a work in 150 days, employed 75 men each working 8 hours daily. After 90 days, only 2/7 of the work was completed. Increasing the number of men by each working now for 10 hours daily, the work can be completed in time.</p>
-            
+
                 <input type="radio" name="6" value="a"> 160 men<br>
                 <input type="radio" name="6" value="b"> 145 men<br>
                 <input type="radio" name="6" value="c"> 150 men<br>
@@ -115,7 +112,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>7. What is a percent of b divided by b percent of a?</p>
-            
+
                 <input type="radio" name="7" value="a"> a<br>
                 <input type="radio" name="7" value="b"> b<br>
                 <input type="radio" name="7" value="c"> 1<br>
@@ -128,7 +125,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>8.  A man bought a horse and a cart. If he sold the horse at 10 % loss and the cart at 20 % gain, he would not lose anything; but if he sold the horse at 5% loss and the cart at 5% gain, he would lose Rs. 10 in the bargain. The amount paid by him was Rs. x for the horse and Rs. y	for the cart. Find x and y.</p>
-            
+
                 <input type="radio" name="8" value="a"> x = 200, y = 100<br>
                 <input type="radio" name="8" value="b"> x = 100, y = 50<br>
                 <input type="radio" name="8" value="c"> x = 150, y = 75<br>
@@ -140,13 +137,13 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>9.  A tennis marker is trying to put together a team of four players for a tennis tournament out of seven available. males - a, b and c; females – m, n, o and p. All players are of equal ability and there must be at least two males in the team. For a team of four, all players must be able to play with each other under the following restrictions:<br><br>
- 
+
             b should not play with m,<br>
 
             c should not play with p,<br> and a should not play with o.<br><br>
             Which of the following statements must be false?<br>
             1.   b and p cannot be selected together<br>
- 
+
             2.   c and o cannot be selected together<br>
 
             3.   c and n cannot be selected together.<br></p>
@@ -161,7 +158,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>10. Five farmers have 7, 9, 11, 13 & 14 apple trees, respectively in their orchards. Last year,each of them discovered that every tree in their own orchard bore exactly the same number of apples. Further, if the third farmer gives one apple to the first, and the fifth gives three to each of the second and the fourth, they would all have exactly the same number of apples. What were the yields per tree in the orchards of the third and fourth farmers?</p>
-            
+
                 <input type="radio" name="10" value="a"> 3<br>
                 <input type="radio" name="10" value="b"> 4<br>
                 <input type="radio" name="10" value="c"> 5<br>
@@ -173,7 +170,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>11. An accurate clock shows 8 o'clock in the morning. Through how may degrees will the hour hand rotate when the clock shows 2 o'clock in the afternoon?</p>
-            
+
                 <input type="radio" name="11" value="a"> 154<br>
                 <input type="radio" name="11" value="b"> 180<br>
                 <input type="radio" name="11" value="c"> 170<br>
@@ -185,7 +182,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>12. If a light flashes every 6 seconds, how many times will it flash in ¾ of an hour?</p>
-            
+
                 <input type="radio" name="12" value="a"> 450<br>
                 <input type="radio" name="12" value="b"> 451<br>
                 <input type="radio" name="12" value="c"> 452<br>
@@ -197,7 +194,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>13. If point P is on line segment AB, then which of the following is always true?</p>
-            
+
                 <input type="radio" name="13" value="a"> AP = PB<br>
                 <input type="radio" name="13" value="b"> AP > PB<br>
                 <input type="radio" name="13" value="c"> PB > AP<br>
@@ -210,7 +207,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>14. All men are vertebrates. Some mammals are vertebrates. Which of the following conclusions drawn from the above statement is correct.</p>
-            
+
                 <input type="radio" name="14" value="a"> All men are mammals.<br>
                 <input type="radio" name="14" value="b"> All mammals are men.<br>
                 <input type="radio" name="14" value="c"> Some vertebrates are mammals.<br>
@@ -224,7 +221,7 @@
             <p>15.  Which of the following statements drawn from the given statements are correct?<br>
             Given:<br>
             All watches sold in that shop are of high standard. Some of the HMT watches are sold in that shop.</p>
-            
+
                 <input type="radio" name="15" value="a"> All watches of high standard were manufactured by HMT.<br>
                 <input type="radio" name="15" value="b"> Some of the HMT watches are of high standard.<br>
                 <input type="radio" name="15" value="c"> None of the HMT watches is of high standard.<br>
@@ -236,7 +233,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>16. Eight friends Harsha, Fakis, Balaji, Eswar, Dhinesh, Chandra, Geetha, and Ahmed are sitting in a circle facing the center. Balaji is sitting between Geetha and Dhinesh. Harsha is third to the left of Balaji and second to the right of Ahmed. Chandra is sitting between Ahmed and Geetha and Balaji and Eshwar are not sitting opposite to each other. Who is third to the left of Dhinesh?</p>
-            
+
                 <input type="radio" name="16" value="a"> Balaji<br>
                 <input type="radio" name="16" value="b"> Eswar<br>
                 <input type="radio" name="16" value="c"> Chandra<br>
@@ -248,7 +245,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>17. If every alternative letter starting from B of the English alphabet is written in small letter, rest all are written in capital letters, how the month “ September” be written.</p>
-            
+
                 <input type="radio" name="17" value="a"> SeptEMbEr<br>
                 <input type="radio" name="17" value="b"> SEpTeMBEr<br>
                 <input type="radio" name="17" value="c"> SeptembeR<br>
@@ -261,7 +258,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>18. The length of the side of a square is represented by x+2. The length of the side of an equilateral triangle is 2x. If the square and the equilateral triangle have equal perimeter,then the value of x is </p>
-            
+
                 <input type="radio" name="18" value="a"> x = 2<br>
                 <input type="radio" name="18" value="b"> x = 3<br>
                 <input type="radio" name="18" value="c"> x = 4<br>
@@ -273,7 +270,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>19. It takes Mr. Karthik y hours to complete typing a manuscript. After 2 hours, he was called away. What fractional part of the assignment was left incomplete?</p>
-            
+
                 <input type="radio" name="19" value="a"> (y+2)/y<br>
                 <input type="radio" name="19" value="b"> (y-2)/y<br>
                 <input type="radio" name="19" value="c"> (y*2)/y)<br>
@@ -285,7 +282,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>20. Which of the following is larger than 3/5?</p>
-            
+
                 <input type="radio" name="20" value="a"> ½<br>
                 <input type="radio" name="20" value="b"> 39/50<br>
                 <input type="radio" name="20" value="c"> 7/25<br>
@@ -298,7 +295,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>21. The number that does not have a reciprocal is.</p>
-            
+
                 <input type="radio" name="21" value="a"> 0<br>
                 <input type="radio" name="21" value="b"> 1<br>
                 <input type="radio" name="21" value="c"> -1<br>
@@ -310,7 +307,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>22. There are 3 persons Sudhir, Arvind, and Gauri. Sudhir lent cars to Arvind and Gauri as many as they had already. After some time Arvind gave as many cars to Sudhir and Gauri as many as they have. After sometime Gauri did the same thing. At the end of this transaction each one of them had 24. Find the cars each originally had.</p>
-            
+
                 <input type="radio" name="22" value="a"> S = 39, A = 21, G = 12<br>
                 <input type="radio" name="22" value="b"> S = 38, A = 22, G = 12<br>
                 <input type="radio" name="22" value="c"> S = 39, A = 20, G = 13<br>
@@ -322,7 +319,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>23. Look at this series: 2, 1, (1/2), (1/4), ... What number should come next?</p>
-            
+
                 <input type="radio" name="23" value="a"> (1/3)<br>
                 <input type="radio" name="23" value="b"> (1/8)<br>
                 <input type="radio" name="23" value="c"> (2/8)<br>
@@ -334,7 +331,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>24. Look at this series: 7, 10, 8, 11, 9, 12, ... What number should come next?</p>
-            
+
                 <input type="radio" name="24" value="a"> 7<br>
                 <input type="radio" name="24" value="b"> 10<br>
                 <input type="radio" name="24" value="c"> 12<br>
@@ -349,7 +346,7 @@
             Courses of Action:<br>
             I. The city municipal authority should take immediate steps to carry out extensive fumigation in ward X.<br>
             II. The people in the area should be advised to take steps to avoid mosquito bites.</p>
-            
+
                 <input type="radio" name="25" value="a"> Only I follows<br>
                 <input type="radio" name="25" value="b"> Only II follows<br>
                 <input type="radio" name="25" value="b"> Either I or II follows<br>
@@ -365,7 +362,7 @@
             Courses of Action:<br>
             I. Government should immediately make arrangement for providing financial assistance to those affected.<br>
             II. Food, water and fodder should immediately be sent to all these areas to save the people and cattle.</p>
-            
+
                 <input type="radio" name="26" value="a"> Only I follows<br>
                 <input type="radio" name="26" value="b"> Only II follows<br>
                 <input type="radio" name="26" value="b"> Either I or II follows<br>
@@ -381,7 +378,7 @@
                 Cliff is older than Tanya.<br>
                 Eric is older than Cliff.<br>
                 If the first two statements are true, the third statement is:</p>
-            
+
                 <input type="radio" name="27" value="a"> true<br>
                 <input type="radio" name="27" value="b"> false<br>
                 <input type="radio" name="27" value="c"> uncertain<br>
@@ -396,7 +393,7 @@
                     Blueberries cost less than raspberries.<br>
                     Raspberries cost more than strawberries and blueberries.<br>
                     If the first two statements are true, the third statement is:</p>
-            
+
                 <input type="radio" name="28" value="a"> true<br>
                 <input type="radio" name="28" value="b"> false<br>
                 <input type="radio" name="28" value="c"> uncertain<br>
@@ -411,7 +408,7 @@
                     Some of the trees in the park are dogwoods.<br>
                     All dogwoods in the park are flowering trees.<br>
                     If the first two statements are true, the third statement is:</p>
-            
+
                 <input type="radio" name="29" value="a"> true<br>
                 <input type="radio" name="29" value="b"> false<br>
                 <input type="radio" name="29" value="c"> uncertain<br>
@@ -423,7 +420,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>30. SCD, TEF, UGH, ____, WKL</p>
-            
+
                 <input type="radio" name="30" value="a"> CMN<br>
                 <input type="radio" name="30" value="b"> UJI<br>
                 <input type="radio" name="30" value="c"> VIJ<br>
@@ -435,7 +432,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>31. Find the odd man out. 1, 3, 9, 12, 19, 29</p>
-            
+
                 <input type="radio" name="31" value="a"> 12<br>
                 <input type="radio" name="31" value="b"> 9<br>
                 <input type="radio" name="31" value="c"> 1<br>
@@ -447,7 +444,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>32. Find the odd man out. 15, 25, 30, 51, 85, 90, 115</p>
-            
+
                 <input type="radio" name="32" value="a"> 15<br>
                 <input type="radio" name="32" value="b"> 25<br>
                 <input type="radio" name="32" value="c"> 51<br>
@@ -459,7 +456,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>33. Find the odd man out. 24,36,52,72,96</p>
-            
+
                 <input type="radio" name="33" value="a"> 72<br>
                 <input type="radio" name="33" value="b"> 52<br>
                 <input type="radio" name="33" value="c"> 36<br>
@@ -471,7 +468,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>34. Arun took a loan of Rs. 1400 with simple interest for as many years as the rate of interest. If he paid Rs.686 as interest at the end of the loan period, what was the rate of interest?</p>
-            
+
                 <input type="radio" name="34" value="a"> 8%<br>
                 <input type="radio" name="34" value="b"> 6%<br>
                 <input type="radio" name="34" value="c"> 4%<br>
@@ -483,7 +480,7 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 ques">
             <p>35. A sum fetched a total simple interest of Rs. 929.20 at the rate of 8 p.c.p.a. in 5 years. What is the sum?</p>
-            
+
                 <input type="radio" name="35" value="a"> 2323<br>
                 <input type="radio" name="35" value="b"> 1223<br>
                 <input type="radio" name="35" value="c"> 2563<br>
@@ -492,19 +489,28 @@
             <div class="col-sm-2"></div>
         </div>
         <br><div class="row">
-            <div class="col-sm-5"></div>
+            <div class="col-sm-4"></div>
             <div class="col-sm-4">
-                <input type="submit" class="btn btn-dark btn-lg" name="submit" value="Submit">
+              <input type="hidden" name="score" value="" id="score" />
+                <input type="hidden" name="userAnswers" value="" id="userAnswers" />
+                <input type="button" class="btn btn-dark btn-lg submit-button" value="Submit">
+                <input type="submit" class="hidden">
+
             </div>
-            <div class="col-sm-3"></div>
+            <div class="col-sm-4"></div>
         </div>
         <br>
     </form>
-    
+
 </div>
-    
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+<script src="questions.js"></script>
+
+
 </body>
 </html>

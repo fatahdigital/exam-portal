@@ -4,7 +4,7 @@
     max-width: 100%;
 }
 input[type=radio] {
-    margin: 5px 0;
+    margin: 5px;
 }
 
 .ques {
@@ -12,4 +12,22 @@ input[type=radio] {
     margin-bottom: 50px;
     font-size: 28px;
     height: 100vh;
+    font-family: serif;
+}
+
+#questions {
+  margin-top: 30px;
+}
+.userid {
+  width: 40%;
+}
+.submit-button {
+  width: 100%;
+}
+.btn-dark {
+  background-color: #333;
+  color: white !important;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
 }
