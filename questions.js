@@ -47,7 +47,7 @@ $(document).ready(function(){
     console.log("submit");
   });
 
-  $(".submit-button").click(function (e) {
+  /*$(".submit-button").click(function (e) {
     e.preventDefault();
     checkAnswers();
     $("#score").val(score);
@@ -55,5 +55,5 @@ $(document).ready(function(){
 
     $("#questions").submit();
   });
-
+*/
 });

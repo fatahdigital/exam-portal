@@ -4,6 +4,7 @@
     
     $skills = "";
     $dob = "";
+    $userid = strtoupper($_POST["userid"]); 
     if(isset($_POST['firstname'])){
         $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
     }
@@ -95,16 +96,53 @@
         $sem4 = mysqli_real_escape_string($conn, $_POST['sem4']);
     }
 	
-    $result = "INSERT INTO `student_info` (`firstname`, `middlename`, `lastname`, `email`, `phone`, `dob`, `gender`, `courses`, `sem3`, `sem4`, `keyskills`, `furtherstudy`, `city`) VALUES ('$firstname', '$middlename', '$lastname', '$email', '$phone', '$dob', '$gender', '$courses', $sem3, $sem4, '$skills', '$future_plan', 'porbandar');"; 
+    $result = "INSERT INTO `student_info` (`firstname`, `middlename`, `lastname`, `email`, `phone`, `dob`, `gender`, `courses`, `sem3`, `sem4`, `keyskills`, `furtherstudy`, `city`, `user_id`) VALUES ('$firstname', '$middlename', '$lastname', '$email', '$phone', '$dob', '$gender', '$courses', $sem3, $sem4, '$skills', '$future_plan', 'porbandar', '$userid');"; 
 	if ($conn->query($result) === TRUE)
 	{
-		echo "<script>alert('Thank you.');</script>";
- 		//echo "<script>window.location='index.html';</script>";
+?>
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Fatah | Exam Portal</title>
+
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+    h1, h2, h3 {
+        text-align: center;
+        margin-top: 100px;
+    }
+    
+</style>
+</head>
+<body> 
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <?php
+                    echo "<h1>Thank You.</h1>";
+                    echo "<h2>Please note your UserID because you will need it later.</h2>";
+                    echo "<h3><b>UserID : ".$userid."</b/></h3>";
+                    echo "<h3>Best of Luck for your exams.</h3>";
+                ?>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+<?php
     }
 	else
 	{
-		echo "<script>alert('There was some problem please try again later.')</script>";
-        echo $result;
-		//echo "<script>window.location='index.html';</script>";		
+		echo "<script>alert('There was some problem please try again later.')</script>";		
     }
 ?>
