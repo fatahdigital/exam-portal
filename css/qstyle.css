@@ -1,3 +1,4 @@
+
 .fatah-logo {
     margin: 0 auto;
     max-width: 100%;
@@ -9,4 +10,6 @@ input[type=radio] {
 .ques {
     margin-top: 50px;
     margin-bottom: 50px;
+    font-size: 28px;
+    height: 100vh;
 }
